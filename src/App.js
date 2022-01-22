@@ -3,18 +3,20 @@ import "./App.css";
 export default function App() {
   return (
     <div className="App">
-      <h1>Weather App</h1>
+      <div className="container">
+        <h1>Weather App</h1>
 
-      <footer>
-        Coded and designed by
-        <a href="https://vleng.co.uk">&nbsp;Vanessa Leng&nbsp;</a>|
-        <a
-          href="https://github.com/vleng-gangkangkung/react-weather-app-project"
-          title="View on Github"
-        >
-          &nbsp;Open Source Code
-        </a>
-      </footer>
+        <footer>
+          Coded and designed by
+          <a href="https://vleng.co.uk">&nbsp;Vanessa Leng&nbsp;</a>|
+          <a
+            href="https://github.com/vleng-gangkangkung/react-weather-app-project"
+            title="View on Github"
+          >
+            &nbsp;Open Source Code
+          </a>
+        </footer>
+      </div>
     </div>
   );
 }
