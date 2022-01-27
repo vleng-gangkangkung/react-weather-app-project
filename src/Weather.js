@@ -1,29 +1,36 @@
 import React from "react";
+import "./App.css";
 
 export default function Weather() {
   return (
-    <div className="Weather Container">
-      <div class="form-row">
-        <div class="form-group">
-          <input
-            type="text"
-            class="form-control form-control-md searchCopy"
-            id="search-bar"
-            style="padding-left: 20px;"
-            placeholder="Search city or use your current location"
-          />
-        </div>
-      </div>
+    <div className="Weather">
+      <div className="col-10">
+        <form>
+          <div className="form-row">
+            <div className="col-md-9">
+              <div className="form-group">
+                <input
+                  type="text"
+                  className="form-control form-control-md searchCopy pl-4"
+                  placeholder="Search city or use your current location"
+                />
+              </div>
+            </div>
 
-      <div class="col-md-2">
-        <div class="form-group">
-          <input
-            type="submit"
-            value="search"
-            class="searchCopy btn"
-            id="submit-btn"
-          />
-        </div>
+            <div className="col-md-2">
+              <div className="form-group">
+                <input
+                  type="submit"
+                  value="search"
+                  className="searchCopy btn"
+                />
+              </div>
+            </div>
+            {/* <div className="col-1 pl-3 ">
+              <Location />
+            </div> */}
+          </div>
+        </form>
       </div>
     </div>
   );
